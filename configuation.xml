@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esper-configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.espertech.com/schema/esper"
+    xsi:schemaLocation="
+http://www.espertech.com/schema/esper
+http://www.espertech.com/schema/esper/esper-configuration-2.0.xsd">
+	<event-type-auto-name package-name="com.operators.Event"/>
+	<event-type name="Stock_Event_Rank" class="com.operators.Event.Stock_Event_Rank"/>
+	<event-type name="Resident_Status_Event" class="com.operators.Event.Resident_Status_Event"/>
+	<plugin-singlerow-function name="rank" function-class="com.operators.Event.Event_Rank_Operator" function-method="computeRank" value-cache="enabled" />
+	<plugin-singlerow-function name="status" function-class="com.operators.Event.Event_Rank_Operator" function-method="checkstatus" value-cache="enabled" />
+	<plugin-singlerow-function name="match" function-class="com.operators.Event.Event_Match_Operator" function-method="computeMatch" value-cache="enabled" />
+	<plugin-singlerow-function name="verify" function-class="com.operators.Event.Event_Verify_Operator" function-method="computeVerify" value-cache="enabled" />
+	<plugin-singlerow-function name="labels" function-class="com.operators.Event.Event_Annotate_Operator" function-method="computeLabel" value-cache="enabled" />
+	<plugin-singlerow-function name="rate" function-class="com.operators.Event.Event_Rate_Operator" function-method="computeRating" value-cache="enabled" />
+</esper-configuration>
