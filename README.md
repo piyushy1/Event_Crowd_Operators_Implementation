@@ -1,12 +1,4 @@
 # Event_Crowd_Operators_Implementation
 ### Citation
-'''
-@inproceedings{yadav2017event,
-  title={The Event Crowd: A Novel Approach for Crowd-Enabled Event Processing},
-  author={Yadav, Piyush and Hasan, Souleiman and Curry, Edward and others},
-  booktitle={Proceedings of the 11th ACM International Conference on Distributed and Event-based Systems},
-  pages={44--53},
-  year={2017},
-  organization={ACM}
-}
-'''
+Yadav, Piyush, Souleiman Hasan, and Edward Curry. "The Event Crowd: A Novel Approach for Crowd-Enabled Event Processing." In Proceedings of the 11th ACM International Conference on Distributed and Event-based Systems, pp. 44-53. ACM, 2017.
+
